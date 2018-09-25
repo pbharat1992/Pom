@@ -5,8 +5,8 @@
     <classes>
       <class name="com.testcases.HomePageTest">
         <methods>
+          <include name="verifyQuestionSymbol"/>
           <include name="setUp"/>
-          <include name="validatecreatenewDeal"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.testcases.HomePageTest -->

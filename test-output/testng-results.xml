@@ -1,96 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="11" passed="3">
+<testng-results skipped="0" failed="0" ignored="19" total="20" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="141979" started-at="2018-09-20T04:23:07Z" finished-at="2018-09-20T04:25:29Z">
+  <suite name="Default suite" duration-ms="64753" started-at="2018-09-25T06:29:56Z" finished-at="2018-09-25T06:31:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="141979" started-at="2018-09-20T04:23:07Z" finished-at="2018-09-20T04:25:29Z">
+    <test name="Default test" duration-ms="64753" started-at="2018-09-25T06:29:56Z" finished-at="2018-09-25T06:31:01Z">
       <class name="com.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="setUp" is-config="true" duration-ms="42861" started-at="2018-09-20T04:23:08Z" finished-at="2018-09-20T04:23:51Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="setUp" is-config="true" duration-ms="61502" started-at="2018-09-25T06:29:56Z" finished-at="2018-09-25T06:30:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatecreatenewDeal(java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.testcases.HomePageTest@59ec2012]" name="validatecreatenewDeal" duration-ms="6772" started-at="2018-09-20T04:23:51Z" data-provider="getCRMTestData1" finished-at="2018-09-20T04:23:58Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mr.]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Google]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[10000.0]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="verifyQuestionSymbol()[pri:20, instance:com.testcases.HomePageTest@59ec2012]" name="verifyQuestionSymbol" duration-ms="2436" started-at="2018-09-25T06:30:57Z" finished-at="2018-09-25T06:31:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatecreatenewDeal -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="770" started-at="2018-09-20T04:23:58Z" finished-at="2018-09-20T04:23:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="setUp" is-config="true" duration-ms="39854" started-at="2018-09-20T04:23:58Z" finished-at="2018-09-20T04:24:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatecreatenewDeal(java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.testcases.HomePageTest@59ec2012]" name="validatecreatenewDeal" duration-ms="6256" started-at="2018-09-20T04:24:38Z" data-provider="getCRMTestData1" finished-at="2018-09-20T04:24:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dr.]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Amazon]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[20000.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatecreatenewDeal -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="737" started-at="2018-09-20T04:24:45Z" finished-at="2018-09-20T04:24:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="setUp" is-config="true" duration-ms="37734" started-at="2018-09-20T04:24:45Z" finished-at="2018-09-20T04:25:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validatecreatenewDeal(java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.testcases.HomePageTest@59ec2012]" name="validatecreatenewDeal" duration-ms="5373" started-at="2018-09-20T04:25:23Z" data-provider="getCRMTestData1" finished-at="2018-09-20T04:25:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Mrs.]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ebay]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[30000.0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatecreatenewDeal -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="773" started-at="2018-09-20T04:25:28Z" finished-at="2018-09-20T04:25:29Z">
+        </test-method> <!-- verifyQuestionSymbol -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.testcases.HomePageTest@59ec2012]" name="tearDown" is-config="true" duration-ms="779" started-at="2018-09-25T06:31:00Z" finished-at="2018-09-25T06:31:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

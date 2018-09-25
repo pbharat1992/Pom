@@ -13,11 +13,13 @@ import com.pages.DealsInformationPage;
 import com.pages.DealsPage;
 import com.pages.HomePage;
 import com.pages.LoginPage;
+import com.pages.ShortListPage;
 import com.util.TestUtil;
 
 public class HomePageTest extends TestBase {
 	LoginPage loginPage;
 	HomePage homePage;
+	ShortListPage shortListPage;
 	TestUtil testUtil;
 	ContactsPage contactsPage;
 	ContactInformationPage contactInformationPage;
@@ -62,6 +64,17 @@ public class HomePageTest extends TestBase {
 		Assert.assertTrue(homePage.verifyCorrectUserName());
 	}
 	
+	@Test(priority=15)
+	public void verifynoCompanyLoadedLinkTest() throws InterruptedException {
+		homePage.nocompanyloaded();
+		
+	}
+	
+	@Test(priority=16)
+	public void verifyShortListLinkTest() {
+		shortListPage=homePage.clickOnShortListLink();
+		
+	}
 	
 	@Test(priority=3)
 	public void verifyContactsLinkTest() throws InterruptedException{
@@ -133,6 +146,12 @@ public class HomePageTest extends TestBase {
 //		dealsInformationPage.createnewDeal("DR.","Automation QA Engineer","1000");
 //	}
 	
+	@Test(priority=9)
+	public void validatedealNo() {
+		dealsInformationPage=homePage.clickOnNewDeal();
+		dealsInformationPage.verifydealNo();
+	}
+	
 	
 	@DataProvider
 	public Object[][] getCRMTestData1(){
@@ -141,7 +160,7 @@ public class HomePageTest extends TestBase {
 	}
 	
 	
-	@Test(priority=9, dataProvider="getCRMTestData1")
+	@Test(priority=10, dataProvider="getCRMTestData1")
 	public void validatecreatenewDeal(String dealTitle, String company, String amount) throws InterruptedException{
 		
 		
@@ -150,6 +169,46 @@ public class HomePageTest extends TestBase {
 	dealsInformationPage.createnewDeal(dealTitle,company,amount);
 	}	
 	
+	@Test(priority=11)
+	public void verifyselectdropdown() {
+		homePage.crmdropdown();
+	}
+	
+	@Test(priority=12)
+	public void verifysetUpandHelpandLogoutLinks() throws InterruptedException {
+		homePage.setUpandHelpandLogoutLinks();
+	}
+	
+	@Test(priority=13)
+public void verifyaddboxesLink() throws InterruptedException {
+		homePage.addboxes();
+	}
+	
+	@Test(priority=14)
+	public void verifyknowledgebaseLink() throws InterruptedException {
+		homePage.knowledgebaseLink();
+	}
+	
+	@Test(priority=17)
+	public void verifytimelineLink() throws InterruptedException {
+homePage.ClickOnTimeLineLink();		
+	}
+	
+	@Test(priority=18)
+	public void verifySearchButton() {
+		homePage.ClickOnSearchButton();
+	}
+	
+	@Test(priority=19)
+	public void verifySymbolLink() {
+		homePage.ClickOnSymbolLink();
+	}
+	
+	
+	@Test(priority=20)
+	public void verifyQuestionSymbol() throws InterruptedException {
+		homePage.ClickOnQuestionMarkSymbol();
+	}
 	
 	
 	@AfterMethod

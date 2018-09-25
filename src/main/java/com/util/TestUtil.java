@@ -31,6 +31,10 @@ public class TestUtil extends TestBase{
 		driver.switchTo().frame("mainpanel");
 	}
 	
+	public void switchToFrame1() {
+		driver.switchTo().frame("leftpanel");
+	}
+	
 	public static Object[][] getTestData(String sheetName2) {
 		FileInputStream file = null;
 		try {

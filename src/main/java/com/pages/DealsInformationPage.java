@@ -11,7 +11,7 @@ public class DealsInformationPage extends TestBase {
 	@FindBy(xpath = "//fieldset//legend[text()='Deal']")
 	WebElement dealInfoHeader;
 	
-	@FindBy(xpath="//input[@type='text' and @value='10002']")
+	@FindBy(xpath="//*[@id=\"prospectForm\"]/table/tbody/tr[2]/td[1]/table/tbody/tr[1]/td[2]/input")
 	WebElement dealNo;
 	
 	@FindBy(name = "title")
